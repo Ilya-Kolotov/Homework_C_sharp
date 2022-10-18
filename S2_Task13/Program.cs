@@ -6,7 +6,7 @@
 Console.WriteLine("Введите любое целое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if(num < 100 && num > -100)
+if(num / 100 == 0)
 {
     Console.WriteLine("Третьей цифры нет");
 }
@@ -18,7 +18,7 @@ else
 
 int ThirdDigit (int number)
 {
-    while(number > 999 || number < -999)
+    while(number / 1000 != 0)
     {
         number = number / 10;
     }
