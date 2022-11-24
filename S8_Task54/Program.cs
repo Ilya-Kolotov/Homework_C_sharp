@@ -37,7 +37,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void SortRowstMatrix(int[,] matrix)
+void SortRowsMatrix(int[,] matrix)
 {
 
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -61,5 +61,5 @@ void SortRowstMatrix(int[,] matrix)
 int[,] matrix = CreateMatrixRndInt(4, 5, 1, 10);
 PrintMatrix(matrix);
 Console.WriteLine();
-SortRowstMatrix(matrix);
+SortRowsMatrix(matrix);
 PrintMatrix(matrix);

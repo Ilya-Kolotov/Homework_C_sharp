@@ -50,14 +50,6 @@ double[] GetAverageElementInRow(int[,] matrix)
     }
     return array;
 }
-void PrintArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
-        else Console.Write($"{array[i]}");
-    }
-}
 int RowWithMinSum(double[] array)
 {
     int i = 0;
