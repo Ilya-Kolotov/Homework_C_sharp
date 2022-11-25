@@ -17,7 +17,7 @@ Console.Write("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if(number > 0)
 {
-Console.Write($" Числа в промежутке от N до 1 = {number} ->  ");
+Console.Write($" Числа в промежутке от {number} до 1 =  ->  ");
 NaturalNumbers(number);
 }
 else Console.WriteLine("Введено некорректное число");
