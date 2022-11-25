@@ -5,7 +5,9 @@
 
 void NaturalNumbers(int num)
 {
-    if(num == 0) return;  
+    
+    if(num == 0) return; 
+     
     Console.Write($"{num} ");  
     NaturalNumbers(num - 1);
     
@@ -13,6 +15,9 @@ void NaturalNumbers(int num)
 
 Console.Write("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
+if(number > 0)
+{
 Console.Write($" Числа в промежутке от N до 1 = {number} ->  ");
 NaturalNumbers(number);
+}
+else Console.WriteLine("Введено некорректное число");
