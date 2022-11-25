@@ -5,10 +5,10 @@
 // 66(0,0,0) 27(0,0,1) 25(0,1,0) 90(0,1,1)
 // 34(1,0,0) 26(1,0,1) 41(1,1,0) 55(1,1,1)
 
-int[,,] CreateArray3DRndInt(int rows, int columns, int depth, int min, int max)
+int[,,] CreateArray3DRndInt(int rows, int columns, int depth)
 {
     int[,,] matrix = new int[rows, columns, depth];
-    Random rnd = new Random();
+    int count = 10;
 
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -16,7 +16,7 @@ int[,,] CreateArray3DRndInt(int rows, int columns, int depth, int min, int max)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
-                matrix[i, j, k] = rnd.Next(min, max + 1);
+                matrix[i, j, k] = count++;
             }
 
         }
@@ -40,5 +40,5 @@ void PrintArray3D(int[,,] array3D)
     }    
 }
 
-int[,,] newArray3D = CreateArray3DRndInt(3, 3, 3, 1, 10);
+int[,,] newArray3D = CreateArray3DRndInt(3, 3, 3);
 PrintArray3D(newArray3D);
