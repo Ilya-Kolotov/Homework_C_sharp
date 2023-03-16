@@ -9,8 +9,10 @@
 
 Console.WriteLine("Введите пятизначное целое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
+int len = Convert.ToString(Math.Abs(num)).Length;
+Console.WriteLine(len);
 int newNum = ReversalNumber(Math.Abs(num));
-if (Math.Abs(num) > 9999 && Math.Abs(num) < 100000)
+if (len == 5)
 {
     if (newNum == Math.Abs(num))
     {
